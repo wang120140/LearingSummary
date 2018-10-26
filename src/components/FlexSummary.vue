@@ -68,8 +68,24 @@
           </ul>
       <h3>2.关于项目中的属性</h3>
         <ul>
-          <li>2.1  flex</li>
-          <li>2.2  flex-grow</li>
+          <li>2.1  flex  :flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选 
+            <div> 
+                   属性方式：flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+            </div>
+          </li>
+          <li>2.2  flex-grow 属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大 
+            <div>
+                属性方式  flex-grow : number  实例  flex-grow: 1;
+                <input type="text" :v-model="flexGrow.flexGrow" placeholder="控制第二个div属性 flow-grow ">
+                <div>{{flexGrow.flexGrow}}</div>
+                <div class ="flexDirection flexDiv">
+                    <div>第一个</div>
+                    <div :style="flexGrow">第二个</div>
+                    <div>第三个</div>
+                 </div>
+            </div>
+            
+          </li>
           <li>2.3  flex-shrink</li>
           <li>2.4  flex-basis</li>
           <li>2.5  order</li>
@@ -100,6 +116,9 @@ export default {
         alignItems: "flexStart",
         flexWrap: "wrap",
         width: "auto"
+      },
+      flexGrow: {
+        flexGrow: 1
       }
     };
   }
