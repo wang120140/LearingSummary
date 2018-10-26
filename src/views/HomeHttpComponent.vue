@@ -1,8 +1,7 @@
 <template>
     <div>
-        <h3>JS部分</h3> 
+        <h3>HTTP协议部分</h3>
         <hr>
-        <router-link to="/regComponent">正则表达式</router-link>
     </div>
 </template>
 

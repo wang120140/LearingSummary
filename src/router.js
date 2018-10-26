@@ -18,7 +18,12 @@ export default new Router({
             name: "FlexSummary",
             component: FlexSummary
         },
-
+        {  
+            path:"/regComponent",
+            name:"regComponent",
+            component:()=>
+                import ("./components/JS/RegComponent.vue")
+        },
         {
             path: '/about',
             name: 'about',

@@ -1,8 +1,7 @@
 <template>
     <div>
-        <h3>JS部分</h3> 
-        <hr>
-        <router-link to="/regComponent">正则表达式</router-link>
+        <router-link to="/"> 后退到首页</router-link>
+        <h2>正则表达式</h2>
     </div>
 </template>
 
