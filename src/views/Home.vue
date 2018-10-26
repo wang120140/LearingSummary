@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <!-- <FlexSummary msg="Welcome to Your Vue.js App"/> -->
+    <h2>王彦辉知识总结。。。。。。</h2>
     <div class="ContentAll">
       <div class="ContentItem">
           <home-html-component></home-html-component>
@@ -23,6 +23,12 @@
       <div class ="ContentItem">
         <home-http-component></home-http-component>
       </div>
+      <div class ="ContentItem">
+        <home-webpack-component></home-webpack-component>
+      </div>
+      <div class ="ContentItem">
+        <home-git-component></home-git-component>
+      </div>
     </div>
     
   </div>
@@ -36,6 +42,8 @@ import HomeCompatibilityComponent from "./HomeCompatibilityComponent";
 import HomeJqueryComponent from "./HomeJqueryComponent";
 import HomeVueComponent from "./HomeVueComponent";
 import HomeHttpComponent from "./HomeHttpComponent";
+import HomeWebpackComponent from "./HomeWebpackComponent";
+import HomeGitComponent from "./HomeGitCopmonent"
 export default {
   name: "home",
   components: {
@@ -45,7 +53,9 @@ export default {
     HomeCompatibilityComponent,
     HomeJqueryComponent,
     HomeVueComponent,
-    HomeHttpComponent
+    HomeHttpComponent,
+    HomeWebpackComponent,
+    HomeGitComponent
   }
 };
 </script>
@@ -60,5 +70,10 @@ export default {
   border: 1px solid red;
   height: 18.75rem;
   overflow: auto;
+}
+h2{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
 }
 </style>
