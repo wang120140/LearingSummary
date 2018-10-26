@@ -1,18 +1,18 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <FlexSummary msg="Welcome to Your Vue.js App"/> -->
+    <router-link  to="/FlexSummary"> Flex</router-link>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import FlexSummary from "@/components/FlexSummary.vue";
 
 export default {
-  name: 'home',
+  name: "home",
   components: {
-    HelloWorld
+    FlexSummary
   }
-}
+};
 </script>
