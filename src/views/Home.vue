@@ -3,19 +3,13 @@
     <!-- <FlexSummary msg="Welcome to Your Vue.js App"/> -->
     <div class="ContentAll">
       <div class="ContentItem">
-         <h3>HTML部分</h3>
-         <hr>
-        </div>
+          <home-html-component></home-html-component>
+      </div>
       <div class="ContentItem"> 
-        <h3>css部分</h3>
-        <hr>
-        <div>
-          <router-link  to="/FlexSummary"> Flex</router-link>
-        </div>
+          <home-css-component></home-css-component>
       </div>
       <div class="ContentItem">
-        <h3>JS部分</h3> 
-        <hr>
+          <home-js-component></home-js-component>
       </div>
     </div>
     
@@ -23,13 +17,15 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import FlexSummary from "@/components/FlexSummary.vue";
-
+import HomeHtmlComponent from "./HomeHTMLCompoent";
+import HomeCssComponent from "./HomeCSSComponent";
+import HomeJsComponent from "./HomeJSComponent";
 export default {
   name: "home",
   components: {
-    FlexSummary
+    HomeHtmlComponent,
+    HomeCssComponent,
+    HomeJsComponent
   }
 };
 </script>

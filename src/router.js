@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import FlexSummary from './components/FlexSummary.vue'
+import FlexSummary from './components/CSS/FlexSummary.vue'
 //import App from './App.vue'
 
 

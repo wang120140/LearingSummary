@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- //<img src="../../public/bg01.gif" alt=""> -->
-    <router-link to="/">后退</router-link>
+    <router-link to="/">后退到首页</router-link>
     <h2>关于flex布局文件</h2>
       <h3>1.关于容器的属性</h3>
           <ul>
@@ -70,25 +70,49 @@
         <ul>
           <li>2.1  flex  :flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选 
             <div> 
-                   属性方式：flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+                   属性方式：flex: none | [ 'flex-grow''flex-shrink'>? || 'flex-basis'> ]
             </div>
           </li>
           <li>2.2  flex-grow 属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大 
             <div>
-                属性方式  flex-grow : number  实例  flex-grow: 1;
-                <input type="text" :v-model="flexGrow.flexGrow" placeholder="控制第二个div属性 flow-grow ">
-                <div>{{flexGrow.flexGrow}}</div>
-                <div class ="flexDirection flexDiv">
+                属性方式  flex-grow : number  实例  flex-grow:
+                <input type="number" v-model="flexGrow.flexGrow" placeholder="控制第二个div属性 flow-grow ">
+                <div class ="flexDirection flexDiv" id="FlexDirection0">
                     <div>第一个</div>
                     <div :style="flexGrow">第二个</div>
                     <div>第三个</div>
                  </div>
             </div>
-            
           </li>
-          <li>2.3  flex-shrink</li>
+          <li>2.3  flex-shrink  属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。 
+            <div> 属性方式： flex-shrink: number; /* default 1 */</div>
+            控制第二个属性方式  flex-shink : <input type="number" v-model="flexShrink.flexShrink" placeholder="控制第二个属性方式" >
+              <div class ="flexDirection flexDiv" id="FlexShink0">
+                    <div>第一个</div>
+                    <div :style="flexShrink">第二个</div>
+                    <div>第三个</div>
+                    <div> 第四个</div>
+                    <div>第五个</div>
+                    <div> 第六个</div>
+                 </div>
+          </li>
+
           <li>2.4  flex-basis</li>
-          <li>2.5  order</li>
+          <li>2.5  order 属性定义项目的排列顺序。数值越小，排列越靠前，默认为0
+              <div> 属性方式： order: integer;</div>
+              属性第二div中Order属性：order : <input type="number" v-model="Order.order" placeholder="">
+               <div class ="flexDirection flexDiv">
+                  <div>
+                    order :1
+                  </div>
+                  <div :style="Order">
+                    order: {{Order.order}}
+                  </div>
+                  <div>
+                    order: 2
+                  </div>
+               </div>
+          </li>
           <li>2.6  align-self</li>
         </ul>
       <h3>参考地址</h3>
@@ -119,6 +143,12 @@ export default {
       },
       flexGrow: {
         flexGrow: 1
+      },
+      flexShrink:{
+        flexShrink:1
+      },
+      Order:{
+        order:1
       }
     };
   }
@@ -140,6 +170,9 @@ select {
 }
 .flexDirection {
   display: flex;
+}
+#FlexDirection0 div{
+ width: 20%;
 }
 .flexDiv div {
   width: 30%;
@@ -163,6 +196,9 @@ select {
 }
 .flexDiv div:nth-child(6) {
   background-color: #504e3d;
+}
+#FlexShink0 div{
+  width:50%;
 }
 .alignI {
   height: 80px;
