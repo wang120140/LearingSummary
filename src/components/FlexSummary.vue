@@ -75,6 +75,8 @@
           <li>2.5  order</li>
           <li>2.6  align-self</li>
         </ul>
+      <h3>参考地址</h3>
+        <a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html"> 阮一峰的Flex 布局教程</a>
   </div>
   
 </template>
