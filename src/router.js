@@ -18,16 +18,29 @@ export default new Router({
             name: "FlexSummary",
             component: FlexSummary
         },
-        {  
-            path:"/regComponent",
-            name:"regComponent",
-            component:()=>
+        {
+            path: "/regComponent",
+            name: "regComponent",
+            component: () =>
                 import ("./components/JS/RegComponent.vue")
         },
         {
-            path:"/DeepCloneComponent",
-            name:"DeepCloneComponent",
-            component:()=> import ("./components/JS/DeepCloneComponent.vue")
+            path: "/DeepCloneComponent",
+            name: "DeepCloneComponent",
+            component: () =>
+                import ("./components/JS/DeepCloneComponent.vue")
+        },
+        {
+            path: "/SourceBase",
+            name: "SourceBase",
+            component: () =>
+                import ("./components/VueSource/SourceBase.vue")
+        },
+        {
+            path: "/CompatibilityComponent",
+            name: "CompatibilityComponent",
+            component: () =>
+                import ("./components/CompatibilityComponent.vue")
         },
         {
             path: '/about',

@@ -29,6 +29,9 @@
       <div class ="ContentItem">
         <home-git-component></home-git-component>
       </div>
+      <div class ="ContentItem">
+        <home-projection-component></home-projection-component>
+      </div>
     </div>
     
   </div>
@@ -43,7 +46,8 @@ import HomeJqueryComponent from "./HomeJqueryComponent";
 import HomeVueComponent from "./HomeVueComponent";
 import HomeHttpComponent from "./HomeHttpComponent";
 import HomeWebpackComponent from "./HomeWebpackComponent";
-import HomeGitComponent from "./HomeGitCopmonent"
+import HomeGitComponent from "./HomeGitCopmonent";
+import HomeProjectionComponent from "./HomeProjectionComponent";
 export default {
   name: "home",
   components: {
@@ -55,7 +59,8 @@ export default {
     HomeVueComponent,
     HomeHttpComponent,
     HomeWebpackComponent,
-    HomeGitComponent
+    HomeGitComponent,
+    HomeProjectionComponent
   }
 };
 </script>
@@ -71,9 +76,9 @@ export default {
   height: 18.75rem;
   overflow: auto;
 }
-h2{
+h2 {
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 600;
 }
 </style>
