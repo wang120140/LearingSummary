@@ -25,6 +25,11 @@ export default new Router({
                 import ("./components/JS/RegComponent.vue")
         },
         {
+            path:"/DeepCloneComponent",
+            name:"DeepCloneComponent",
+            component:()=> import ("./components/JS/DeepCloneComponent.vue")
+        },
+        {
             path: '/about',
             name: 'about',
             // route level code-splitting
