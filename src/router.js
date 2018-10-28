@@ -43,6 +43,12 @@ export default new Router({
                 import ("./components/CompatibilityComponent.vue")
         },
         {
+            path: "/HttpComponent",
+            name: "HttpComponent",
+            component: () =>
+                import ("./components/HttpComponent.vue")
+        },
+        {
             path: '/about',
             name: 'about',
             // route level code-splitting
