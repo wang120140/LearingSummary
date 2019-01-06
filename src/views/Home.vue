@@ -33,7 +33,13 @@
         <home-projection-component></home-projection-component>
       </div>
     </div>
-    
+    <hr>
+      好的网址
+      <div class = "GoodInternet">
+        <a href="http://www.ruanyifeng.com">阮一峰博客网址</a>
+        <a href="http://tool.oschina.net/">在线测试工具</a>
+      </div>
+      
   </div>
 </template>
 
@@ -80,5 +86,13 @@ h2 {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-weight: 600;
+}
+.GoodInternet a {
+  display: inline;
+  width: 3.125rem;
+  height: 3.125rem;
+  text-align: center;
+  line-height: 3.125rem;
+  margin: 0.625rem;
 }
 </style>
